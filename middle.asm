@@ -46,20 +46,20 @@ main:
     # Check Solution $t0
     slt $t4, $t0, $t1
     slt $t5, $t0, $t2
-    and $t3, $t4, $t5
-    beq $t3, $zero, resOne #$t0 is result
+    xor $t3, $t4, $t5
+    bne $t3, $zero, resOne #$t0 is result
 
     # Check Solution $t1
     slt $t4, $t1, $t0
     slt $t5, $t1, $t2
-    and $t3, $t4, $t5
-    beq $t3, $zero, resTwo #$t1 is result
+    xor $t3, $t4, $t5
+    bne $t3, $zero, resTwo #$t1 is result
 
     # Check Solution $t2
     slt $t4, $t2, $t0
     slt $t5, $t2, $t1
-    and $t3, $t4, $t5
-    beq $t3, $zero, resThree #$t2 is result
+    xor $t3, $t4, $t5
+    bne $t3, $zero, resThree #$t2 is result
 
 # If Equal 1    
 equal1: 
