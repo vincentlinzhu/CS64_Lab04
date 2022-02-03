@@ -16,9 +16,9 @@
 #
 .data
 	# TODO: Write your initializations here
-	prompt1: .asciiz "Enter the number x:\n"
-	prompt2: .asciiz "Enter the exponent n:\n"
-	output: .asciiz "Power(x,n) is:\n"
+	prompt1: .asciiz "Enter the number x: \n"
+	prompt2: .asciiz "Enter the exponent n: \n"
+	output: .asciiz "Power(x,n) is: \n"
 	newline: .asciiz "\n"
 
 
